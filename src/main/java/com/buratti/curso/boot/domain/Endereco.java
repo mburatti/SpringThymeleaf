@@ -1,4 +1,5 @@
 package com.buratti.curso.boot.domain;
+<<<<<<< HEAD
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,12 +14,25 @@ public class Endereco extends AbstractEntity<Long> {
 	@Column(nullable=false)
 	private String logradouro;
 		
+=======
+import javax.persistence.*;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name="ENDERECO")
+public class Endereco extends AbstractEntity<Long> {
+
+	@Column(nullable=false)
+	private String logradouro;
+	
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 	@Column(nullable=false)
 	private String bairro;
 	
 	@Column(nullable=false)
 	private String cidade;
 	
+<<<<<<< HEAD
 	@Column(nullable = false, length = 2)
 	@Enumerated(EnumType.STRING)
 	private UF uf;
@@ -29,6 +43,18 @@ public class Endereco extends AbstractEntity<Long> {
 	@Column(nullable = false, length = 5)
 	private Integer numero;
 		
+=======
+	@Column(nullable=false, length=2)
+	@Enumerated(EnumType.STRING)
+	private UF uf;
+	
+	@Column(nullable=false, length=9)
+	private String cep;
+	
+	@Column(nullable=false, length=5)
+	private Integer numero;
+	
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 	private String complemento;
 
 	public String getLogradouro() {
@@ -86,5 +112,8 @@ public class Endereco extends AbstractEntity<Long> {
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 }

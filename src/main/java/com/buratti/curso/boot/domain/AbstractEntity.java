@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @SuppressWarnings("serial")
 @MappedSuperclass
+<<<<<<< HEAD
 public class AbstractEntity<ID extends Serializable> implements Serializable{
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,6 +20,12 @@ public class AbstractEntity<ID extends Serializable> implements Serializable{
 		this.id = id;
 	}
 
+=======
+public abstract class AbstractEntity<ID extends Serializable> implements Serializable {
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private ID id;
+
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -46,9 +53,22 @@ public class AbstractEntity<ID extends Serializable> implements Serializable{
 
 	@Override
 	public String toString() {
+<<<<<<< HEAD
 		return "id=" + id;
 	}
 	
 	
 	
+=======
+		return "id =" + id;
+	}
+
+	public ID getId() {
+		return id;
+	}
+
+	public void setId(ID id) {
+		this.id = id;
+	}
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 }

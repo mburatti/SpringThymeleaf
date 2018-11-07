@@ -29,6 +29,7 @@ public enum UF {
 	TO("TO", "Tocantins");
 	
 	private String sigla;
+<<<<<<< HEAD
 	private String descriao;
 	
 	private UF(String sigla, String descriao) {
@@ -50,6 +51,24 @@ public enum UF {
 
 	public void setDescriao(String descriao) {
 		this.descriao = descriao;
+=======
+	private String descricao;
+	private UF(String sigla, String descricao) {
+		this.sigla = sigla;
+		this.descricao = descricao;
+	}
+	public String getSigla() {
+		return sigla;
+	}
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 	}	
 	
 }

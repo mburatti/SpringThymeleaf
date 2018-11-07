@@ -1,6 +1,7 @@
 package com.buratti.curso.boot.dao;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
@@ -53,4 +54,10 @@ public abstract class AbstractDao<T, PK extends Serializable> {
         }
     	return query.getResultList();
 	}
+=======
+
+public class AbstractDao<T, PK extends Serializable> {
+	
+
+>>>>>>> 83b0e6da6ea459e792a5f3af8835410392c5dbe9
 }
